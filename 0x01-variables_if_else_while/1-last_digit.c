@@ -4,7 +4,7 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main- Prints the last digit of a random number and tells if 
+ * main- Prints the last digit of a random number and tells if
  * its greater than five or less than six and not a zero
  *
  * Return: Always 0(success)
