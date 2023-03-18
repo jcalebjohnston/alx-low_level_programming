@@ -4,7 +4,8 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main- Prints the last digit of a random number and tells if its greater than five or less than six and not a zero
+ * main- Prints the last digit of a random number and tells if 
+ * its greater than five or less than six and not a zero
  *
  * Return: Always 0(success)
  */
@@ -21,7 +22,7 @@ int main(void)
 	}
 	else if ((n % 10) < 6 && (n % 10) != 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 but not 0\n", n, n % 10);	
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
 	}
 	else
 	{
