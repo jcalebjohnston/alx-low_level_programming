@@ -39,14 +39,12 @@ char **strtow(char *str)
 
 	while (*(str + len))
 		len++;
-
 	words = count_word(str);
 
 	if (words == 0)
 		return (NULL);
 
 	matrix = (char **) malloc(sizeof(char *) * (words + 1));
-
 	if (matrix == NULL)
 		return (NULL);
 
@@ -58,16 +56,13 @@ char **strtow(char *str)
 			{
 				end = i;
 				tmp = (char *) malloc(sizeof(char) * (c + 1));
-
 				if (tmp == NULL)
 					return (NULL);
 
 				while (start < end)
 					*tmp++ = str[start++];
-
 				*tmp = '\0';
 				matrix[k] = tmp - c;
-
 				k++;
 				c = 0;
 			}
